@@ -1,0 +1,87 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	overflow-x: hidden;
+}
+
+body {
+	box-sizing: border-box;
+	min-height: 100vh;
+	width: 100%;
+	overflow-x: hidden;
+	padding-top: var(--header-height);
+}
+
+:root {
+	--border-radius-1x: 4px;
+	--border-radius-2x: calc(var(--border-radius-1x) * 2);
+
+	--color-white: #fff;
+	--color-dark: #092743;
+	--color-blue: #004A90;
+	--color-blue-additional: #4FA2F0;
+	--color-blue-gray: #52779A;
+	--color-blue-gray-ease: #EFF4F9;
+	--color-red: #D43333;
+
+	--font-size-descr-small: 14px;
+	--font-size-descr: 15px;
+	--font-size-content-small: 16px;
+	--font-size-content: 18px;
+	--font-size-content-big: 20px;
+	--font-size-heading: 32px;
+	--font-size-heading-big: 48px;
+
+	--space-atomar: 4px;
+	--space-atomar-2x: calc(var(--space-atomar) * 2); /* 8px */
+	--space-atomar-3x: calc(var(--space-atomar) * 3); /* 12px */
+	--space-atomar-4x: calc(var(--space-atomar) * 4); /* 16px */
+	--space-atomar-5x: calc(var(--space-atomar) * 5); /* 20px */
+	--space-atomar-6x: calc(var(--space-atomar) * 6); /* 24px */
+	--space-atomar-9x: calc(var(--space-atomar) * 9); /* 36px */
+	--space-wide: 30px;
+	--space-wide-1d5x:calc(var(--space-wide) * 1.5); /* 45px */;
+	--space-wide-2x: calc(var(--space-wide) * 2); /* 60px */
+	--space-wide-3x: calc(var(--space-wide) * 3); /* 90px */
+	--space-wide-4x: calc(var(--space-wide) * 4); /* 120px */
+	--space-wide-5x: calc(var(--space-wide) * 5); /* 150px */
+
+	/* Unique properties */
+	--header-height: 76.8px; /* Using for indenting "body" */
+	--content-area-width: 1140px;
+	--content-area-padding: var(--space-atomar-5x);
+
+	/* Columns system */
+	--column-count: 12;
+	--space-column-gap: var(--space-atomar-6x);
+
+	--space-column-plus-gap: calc((var(--content-area-width) + var(--space-column-gap)) / var(--column-count));
+	--space-column: calc(var(--space-column-plus-gap) - var(--space-column-gap));
+	--space-column-2: calc((var(--space-column-plus-gap)) * 2 - var(--space-column-gap));
+	--space-column-3: calc((var(--space-column-plus-gap)) * 3 - var(--space-column-gap));
+	--space-column-4: calc((var(--space-column-plus-gap)) * 4 - var(--space-column-gap));
+	--space-column-5: calc((var(--space-column-plus-gap)) * 5 - var(--space-column-gap));
+	--space-column-6: calc((var(--space-column-plus-gap)) * 6 - var(--space-column-gap));
+	--space-column-7: calc((var(--space-column-plus-gap)) * 7 - var(--space-column-gap));
+
+	--transition: 200ms;
+	--transition-fast: 100ms;
+	--transition-long: 400ms;
+}
+
+/* ---------------- Adaptation ---------------- */
+
+/* Only Tablets and Phones */
+@media only screen and (max-width: 1080px) {
+	:root {
+		--font-size-heading: 24px;
+		--font-size-heading-big: 28px;
+
+		--header-height: 54px;
+
+		--space-wide: 20px;
+	}
+}

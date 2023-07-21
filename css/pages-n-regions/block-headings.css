@@ -1,0 +1,8 @@
+.headings-block.is-grid-container {
+	row-gap: var(--space-atomar-4x);
+}
+
+.headings-block .headings-block_description-block {
+	display: flex;
+	flex-direction: column-reverse;
+}

@@ -1,0 +1,175 @@
+/* Objects properties */
+.noselect {
+	-webkit-touch-callout: none; /* iOS Safari */
+	  -webkit-user-select: none; /* Safari */
+		-khtml-user-select: none; /* Konqueror HTML */
+		  -moz-user-select: none; /* Old versions of Firefox */
+			-ms-user-select: none; /* Internet Explorer/Edge */
+				 user-select: none; /* Non-prefixed version, currently
+											  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.is-margin-top-wide-1x { padding-top: var(--space-wide); }
+.is-margin-top-wide-2x { padding-top: var(--space-wide-2x); }
+.is-margin-top-wide-3x { padding-top: var(--space-wide-3x); }
+.is-margin-top-wide-4x { padding-top: var(--space-wide-4x); }
+.is-margin-top-wide-5x { padding-top: var(--space-wide-5x); }
+.is-margin-bottom-wide-1x { padding-bottom: var(--space-wide); }
+.is-margin-bottom-wide-2x { padding-bottom: var(--space-wide-2x); }
+.is-margin-bottom-wide-3x { padding-bottom: var(--space-wide-3x); }
+.is-margin-bottom-wide-4x { padding-bottom: var(--space-wide-4x); }
+.is-margin-bottom-wide-5x { padding-bottom: var(--space-wide-5x); }
+
+
+/* Containers */
+.is-content-container {
+	max-width: var(--content-area-width);
+	margin: 0 auto;
+	box-sizing: content-box;
+	padding: 0 var(--content-area-padding); /* Отступы по краям в мобильной версии */
+}
+
+.time-container {
+	display: block;
+	margin-top: var(--space-atomar-4x);
+}
+
+.is-grid-container {
+	display: grid;
+}
+
+.is-grid-container.is-template-7-5 {
+	grid-template-columns: 7fr 5fr;
+}
+
+.is-grid-container.is-template-5-7 {
+	grid-template-columns: 5fr 7fr;
+}
+
+.is-grid-container.is-template-9-3 {
+	grid-template-columns: 9fr 3fr;
+}
+
+.is-grid-container.is-template-7-5 > *:nth-child(2n-1),
+.is-grid-container.is-template-5-7 > *:nth-child(2n-1),
+.is-grid-container.is-template-9-3 > *:nth-child(2n-1)  {
+	padding-right: var(--space-wide-4x);
+}
+
+/* Buttons */
+.btn {
+	display: inline-block;
+	width: max-content;
+	height: max-content;
+	padding: var(--space-atomar-3x) var(--space-atomar-4x);
+	border-radius: var(--border-radius-1x);
+	color: var(--color-white);
+	border: 1px solid var(--color-blue);
+	background-color: var(--color-blue);
+	text-align: center;
+	text-decoration: none;
+	transition: var(--transition);
+}
+
+.btn:hover {
+	filter: brightness(115%);
+}
+
+.btn:active {
+	filter: brightness(105%);
+}
+
+.btn.is-color-red {
+	background-color: var(--color-red);
+	border-color: var(--color-red);
+}
+
+.btn.is-additional {
+	background-color: transparent;
+	border-color: var(--color-blue-additional);
+	color: var(--color-blue-additional);
+	font-weight: 600;
+}
+
+.btn.is-have-icon {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	gap: var(--space-atomar-3x);
+}
+
+.btn.is-have-icon svg {
+	width: var(--space-atomar-4x);
+}
+
+.btn.is-full-width {
+	width: 100%;
+}
+
+/* Headings and subheadings */
+.large-title {
+	hyphens: auto;
+	color: var(--color-dark);
+	font-size: var(--font-size-heading-big);
+	font-weight: 700;
+	line-height: 100%; /* 48px */
+}
+
+.title {
+	color: var(--color-dark);
+	font-size: var(--font-size-heading);
+	font-weight: 600;
+	line-height: 130%; /* 41.6px */
+	letter-spacing: -0.32px;
+}
+
+.small-title {
+	color: var(--color-blue);
+	font-size: var(--font-size-content-small);
+	font-style: normal;
+	font-weight: 600;
+	line-height: 140%; /* 22.4px */
+	letter-spacing: -0.16px;
+}
+
+.subtitle {
+	display: inline-block;
+	margin-bottom: var(--space-atomar-4x);
+	color: var(--color-blue-additional);
+	font-size: var(--font-size-content-small);
+	font-weight: 600;
+	line-height: 120%;
+	letter-spacing: 0.32px;
+	text-transform: uppercase;
+}
+
+.text {
+	color: var(--color-blue-gray);
+	font-size: var(--font-size-descr-small);
+	font-weight: 400;
+	line-height: 160%;
+	letter-spacing: -0.14px;
+}
+
+.text.is-size-large {
+	font-size: var(--font-size-content);
+	letter-spacing: -0.18px;
+}
+
+
+/* ---------------- Adaptation ---------------- */
+
+/* Only Phones */
+@media only screen and (max-width: 780px) {
+	.is-grid-container.is-template-7-5,
+	.is-grid-container.is-template-5-7,
+	.is-grid-container.is-template-9-3 {
+		grid-template-columns: 1fr;
+	}
+
+	.is-grid-container.is-template-7-5 > *:nth-child(2n-1),
+	.is-grid-container.is-template-5-7 > *:nth-child(2n-1),
+	.is-grid-container.is-template-9-3 > *:nth-child(2n-1) {
+		padding-right: 0;
+	}
+}

@@ -1,0 +1,51 @@
+.activities-block {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--space-atomar-6x);
+	margin-top: var(--space-wide-2x);
+}
+
+.activity {
+	max-width: var(--space-column-4);
+	display: flex;
+	box-sizing: border-box;
+	padding: var(--space-atomar-6x);
+	border-radius: var(--border-radius-1x);
+	border: 1px solid var(--color-blue-gray-ease);
+	background: var(--color-white);
+	box-shadow: 0px 4px 8px 0px rgba(0, 74, 144, 0.04);
+}
+
+.activity svg {
+	width: 48px;
+	height: 48px;
+	object-fit: contain;
+}
+
+.activity_description {
+	margin-left: var(--space-atomar-4x);
+	width: calc(100% - 48px - var(--space-atomar-4x));
+}
+
+.activity .text {
+	margin-top: var(--space-atomar-2x);
+}
+
+
+/* ---------------- Adaptation ---------------- */
+
+/* Only Tablets and Phones */
+@media only screen and (max-width: 1180px) {
+	.activity {
+		max-width: none;
+		width: calc(50% - 12px);
+	}
+}
+
+/* Only Phones */
+@media only screen and (max-width: 780px) {
+	.activity {
+		width: 100%;
+	}
+}

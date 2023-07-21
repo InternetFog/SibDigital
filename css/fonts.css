@@ -1,0 +1,10 @@
+@font-face {
+	font-family: 'Montserrat'; 
+	src: local('Montserrat'),
+		url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf),
+		url(../fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf); 
+}
+
+* {
+	font-family: "Montserrat", "Arial", sans-serif;
+}

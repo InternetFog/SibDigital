@@ -1,0 +1,81 @@
+.blog-card-block {
+	position: relative;
+	padding: var(--space-wide) 0;
+	transition: var(--transition-fast) ease-out;
+}
+
+.blog-card-block:first-of-type {
+	margin-top: var(--space-atomar-3x);
+}
+
+.blog-card-block:active {
+	transform: scale(99.5%);
+}
+
+
+.blog-card-block .title a {
+	color: var(--color-dark);
+	text-decoration: none;
+	transition: var(--transition) ease-out;
+}
+
+.blog-card-block .title a::before {
+	content: "";
+	z-index: 1;
+	position: absolute;
+	top: 0;
+	left: calc(0px - var(--space-atomar-9x));
+	display: block;
+	width: calc(100% + 2 * var(--space-atomar-9x));
+	height: 100%;
+	border: 1px solid transparent;
+	border-radius: var(--border-radius-2x);
+	transition: var(--transition) ease-out;
+}
+
+.blog-card-block .title a:hover {
+	color: var(--color-blue-additional);
+}
+
+.blog-card-block .title a:hover::before {
+	border-color: var(--color-blue-gray-ease);
+	box-shadow: 0px 8px 24px 0px rgba(39, 102, 186, 0.09);
+}
+
+
+.blog-card-block_description {
+	display: flex;
+	gap: var(--space-atomar-6x);
+	margin: var(--space-atomar-6x) 0;
+}
+
+.blog-card-block_description img {
+	width: 230px;
+	height: 230px;
+	border-radius: var(--border-radius-2x);
+	object-fit: cover;
+}
+
+
+/* ---------------- Adaptation ---------------- */
+
+/* Only Tablets and Phones */
+@media only screen and (max-width: 1080px) {
+	.blog-card-block_description img {
+		width: 150px;
+		height: 150px;
+	}
+}
+
+/* Only Phones */
+@media only screen and (max-width: 780px) {
+	.blog-card-block_description {
+		flex-direction: column-reverse;
+	}
+
+	.blog-card-block_description img {
+		width: 100%;
+		height: auto;
+		aspect-ratio: 16/9;
+	}
+}

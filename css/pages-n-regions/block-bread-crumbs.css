@@ -1,0 +1,46 @@
+.bread-crumbs-block ul {
+	position: absolute;
+	transform: translateY(var(--space-atomar-6x));
+	display: flex;
+	align-items: center;
+}
+
+.bread-crumbs-block ul li {
+	display: contents;
+	list-style-type: none;
+}
+
+.bread-crumbs-block ul li:not(:first-child)::before {
+	content: url("data:image/svg+xml; utf8, <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none'><path d='M6 12L10 8L6 4' stroke='%234FA2F0' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+	width: var(--space-atomar-4x);
+	height: var(--space-atomar-4x);
+	margin: 0 var(--space-atomar-2x);
+}
+
+.bread-crumbs-block ul li a,
+.bread-crumbs-block ul li span {
+	color: var(--color-blue-gray);
+	font-size: var(--font-size-descr-small);
+	font-weight: 400;
+	line-height: 160%; /* 22.4px */
+	letter-spacing: -0.14px;
+	text-decoration: none;
+	transition: var(--transition);
+}
+
+.bread-crumbs-block ul li span {
+	color: var(--color-blue-additional);
+	cursor: default;
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+	 -khtml-user-select: none; /* Konqueror HTML */
+		-moz-user-select: none; /* Old versions of Firefox */
+		 -ms-user-select: none; /* Internet Explorer/Edge */
+			  user-select: none; /* Non-prefixed version, currently
+											supported by Chrome, Edge, Opera and Firefox */
+}
+
+.bread-crumbs-block ul li a:hover,
+.bread-crumbs-block ul li a:active {
+	color: var(--color-blue-additional);
+}

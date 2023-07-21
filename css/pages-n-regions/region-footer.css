@@ -1,0 +1,44 @@
+footer {
+	position: sticky;
+	top: 100vh;
+	background-color: var(--color-blue);
+	padding: var(--space-wide-2x) 0;
+}
+
+footer .footer_content-block {
+	row-gap: var(--space-wide-1d5x);
+}
+
+footer .title,
+footer .text {
+	color: var(--color-white);
+}
+
+.footer_content-block_support-btn-block {
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+.footer_content-block_text-block_text .text.is-size-large {
+	margin-top: var(--space-atomar-2x);
+}
+
+.footer_content-block_text-block_text:not(:first-child) {
+	margin-top: var(--space-atomar-6x);
+}
+
+.footer_content-block_copyright-block {
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+
+/* ---------------- Adaptation ---------------- */
+
+/* Only Phones */
+@media only screen and (max-width: 780px) {
+	.footer_content-block_copyright-block {
+		grid-column-start: 1;
+		grid-column-end: 2;
+	 }
+}

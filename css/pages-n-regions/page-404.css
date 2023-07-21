@@ -1,0 +1,82 @@
+.page-404-block {
+	position: relative;
+	margin-top: var(--space-wide-3x);
+	margin-bottom: var(--space-wide-4x);
+}
+
+.page-404-block_bg-mockup {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 0;
+	width: 50%;
+	z-index: -1;
+}
+
+.page-404-block_description {
+	width: 50%;
+}
+
+.page-404-block_description .text.is-size-large {
+	margin: var(--space-wide) 0;
+}
+
+.useful-links-list li {
+	list-style-type: none;
+	margin-top: var(--space-wide);
+}
+
+.useful-links-list a {
+	color: var(--color-blue);
+	font-size: var(--font-size-content-small);
+	font-weight: 600;
+	line-height: 140%; /* 22.4px */
+	letter-spacing: -0.16px;
+	text-decoration: none;
+	transition: var(--transition);
+}
+
+.useful-links-list a h4 {
+	display: flex;
+	align-items: center;
+}
+
+
+.useful-links-list a:hover,
+.useful-links-list a:active {
+	color: var(--color-red);
+}
+
+.useful-links-list a h4::before {
+	content: url("data:image/svg+xml; utf8, <svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 20 20' style='enable-background:new 0 0 20 20;' xml:space='preserve'><path fill='%23004A90' d='M19.4,10L15,14.4l-1.1-1.1l2.6-2.6H0.9V9.3h15.6l-2.6-2.6L15,5.6L19.4,10z'/></svg>");
+	display: inline-block;
+	order: 1;
+	width: var(--font-size-content-big);
+	height: var(--font-size-content-big);
+	object-fit: contain;
+	margin-left: var(--space-atomar-2x);
+	transition: var(--transition);
+}
+
+.useful-links-list a:hover h4::before,
+.useful-links-list a:active h4::before {
+	content: url("data:image/svg+xml; utf8, <svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 20 20' style='enable-background:new 0 0 20 20;' xml:space='preserve'><path fill='%23D43333' d='M19.4,10L15,14.4l-1.1-1.1l2.6-2.6H0.9V9.3h15.6l-2.6-2.6L15,5.6L19.4,10z'/></svg>");
+	transform: translateX(var(--space-atomar-2x));
+}
+
+
+
+/* ---------------- Adaptation ---------------- */
+
+/* Only Phones */
+@media only screen and (max-width: 780px) {
+	.page-404-block_description {
+		width: auto;
+	}
+
+	.page-404-block_bg-mockup {
+		position: static;
+		width: 100%;
+		transform: none;
+	}
+}

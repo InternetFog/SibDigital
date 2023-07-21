@@ -1,0 +1,27 @@
+.blog-section.is-content-container {
+	margin-top: var(--space-wide-3x);
+	margin-bottom: var(--space-wide-4x);
+	
+}
+
+.blog-section.is-content-container.is-grid-container {
+	row-gap: var(--space-wide-4x);
+}
+
+.blog-section_content-block_main-information .text {
+	margin-top: var(--space-wide);
+}
+
+.blog-section.is-content-container .content {
+	margin-top: var(--space-wide);
+}
+
+
+/* ---------------- Adaptation ---------------- */
+
+/* Only Tablets and Phones */
+@media screen and (max-width: 1080px) {
+	.blog-section.is-content-container {
+		margin-top: var(--space-wide-5x);
+	}
+}
