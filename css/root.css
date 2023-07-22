@@ -41,6 +41,8 @@ body {
 	--space-atomar-4x: calc(var(--space-atomar) * 4); /* 16px */
 	--space-atomar-5x: calc(var(--space-atomar) * 5); /* 20px */
 	--space-atomar-6x: calc(var(--space-atomar) * 6); /* 24px */
+	--space-atomar-7x: calc(var(--space-atomar) * 7); /* 28px */
+	--space-atomar-8x: calc(var(--space-atomar) * 8); /* 32px */
 	--space-atomar-9x: calc(var(--space-atomar) * 9); /* 36px */
 	--space-wide: 30px;
 	--space-wide-1d5x:calc(var(--space-wide) * 1.5); /* 45px */;

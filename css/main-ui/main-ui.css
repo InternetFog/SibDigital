@@ -51,9 +51,12 @@
 }
 
 .is-grid-container.is-template-7-5 > *:nth-child(2n-1),
-.is-grid-container.is-template-5-7 > *:nth-child(2n-1),
 .is-grid-container.is-template-9-3 > *:nth-child(2n-1)  {
 	padding-right: var(--space-wide-4x);
+}
+
+.is-grid-container.is-template-5-7 > *:nth-child(2n) {
+	padding-left: var(--space-wide-4x);
 }
 
 /* Buttons */
@@ -167,9 +170,12 @@
 	}
 
 	.is-grid-container.is-template-7-5 > *:nth-child(2n-1),
-	.is-grid-container.is-template-5-7 > *:nth-child(2n-1),
 	.is-grid-container.is-template-9-3 > *:nth-child(2n-1) {
 		padding-right: 0;
+	}
+
+	.is-grid-container.is-template-5-7 > *:nth-child(2n) {
+		padding-left: 0;
 	}
 
 	.large-title {
