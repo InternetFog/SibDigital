@@ -68,6 +68,7 @@ body {
 	--space-column-5: calc((var(--space-column-plus-gap)) * 5 - var(--space-column-gap));
 	--space-column-6: calc((var(--space-column-plus-gap)) * 6 - var(--space-column-gap));
 	--space-column-7: calc((var(--space-column-plus-gap)) * 7 - var(--space-column-gap));
+	--space-column-10: calc((var(--space-column-plus-gap)) * 10 - var(--space-column-gap));
 
 	--transition: 200ms;
 	--transition-fast: 100ms;
