@@ -61,6 +61,7 @@
 
 /* Buttons */
 .btn {
+	cursor: pointer;
 	display: inline-block;
 	width: max-content;
 	height: max-content;
