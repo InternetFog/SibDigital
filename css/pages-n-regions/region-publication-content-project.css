@@ -8,6 +8,14 @@
 	letter-spacing: -0.14px;
 }
 
+.content.is-project-content .list-with-ticks-block li {
+	color: var(--color-blue);
+	font-size: var(--font-size-content-small);
+	font-weight: 600;
+	line-height: 140%; /* 22.4px */
+	letter-spacing: -0.16px;
+}
+
 /* Colors */
 .content.is-project-content {
 	margin-bottom: var(--space-wide-2x);
