@@ -29,8 +29,6 @@ function slide(sliderOb, direction) {
 
 	}
 
-	console.log(nextSlide);
-
 	// Slide function
 	for (let i = 0; i < slides.length; i++) {	
 		if(slides[i] == nextSlide) {

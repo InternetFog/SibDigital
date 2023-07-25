@@ -64,14 +64,32 @@
 
 	.main-banner_image-block {
 		margin: 0;
+		position: relative;
+		top: var(--space-wide-3x);
+	}
+
+	.main-banner_image-block::after {
+		content: "";
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		height: 100%;
+		z-index: 2;
+		background: linear-gradient(to top, #004A9040 0%, #004A9000 20%);
 	}
 
 	.main-banner_image-block .main-banner_bg-mockup {
-		/* margin-top: calc(0px - var(--space-atomar-6x)); */
 		position: static;
 		width: 100%;
 		height: auto;
 		transform: none;
+	}
+
+	.main-banner_image-block_thumbnail {
+		position: relative;
+		height: auto;
+		width: 100%;
 	}
 
 	.main-banner .is-content-container {

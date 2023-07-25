@@ -1,11 +1,16 @@
 /* ---------------- Redefining styles for content on a project page ---------------- */
 
-.content.is-project-content {
-	margin-bottom: var(--space-wide-2x);
+.content.is-project-content p,
+.content.is-project-content li {
+	font-size: var(--font-size-content);
+	font-weight: 400;
+	line-height: 160%; /* 22.4px */
+	letter-spacing: -0.14px;
 }
 
-.content.is-project-content .headings-block:not(:first-child) {
-	margin-top: var(--space-wide-3x);
+/* Colors */
+.content.is-project-content {
+	margin-bottom: var(--space-wide-2x);
 }
 
 .content.is-project-content .project-cards-block_card_descriprion .small-title {
@@ -16,29 +21,26 @@
 	color: var(--color-blue-additional);
 }
 
-
-
 .content.is-project-content p,
 .content.is-project-content li {
 	color: var(--color-blue-gray);
 }
 
-.content.is-project-content > p,
-.content.is-project-content > h2,
+/* Margins */
+.content.is-project-content .headings-block:not(:first-child),
+.content.is-project-content > h2 {
+	margin-top: var(--space-wide-3x);
+}
+
 .content.is-project-content > h3,
 .content.is-project-content > h4,
 .content.is-project-content > h5,
 .content.is-project-content > h6 {
-	margin-top: 2em;
+	margin-top: var(--space-wide-2x);
 }
 
-
-.content.is-project-content p,
-.content.is-project-content li {
-	font-size: var(--font-size-content);
-	font-weight: 400;
-	line-height: 160%; /* 22.4px */
-	letter-spacing: -0.14px;
+.content.is-project-content > p {
+	margin-top: var(--space-wide);
 }
 
 .content.is-project-content > blockquote.wp-block-quote,
@@ -46,7 +48,7 @@
 .content.is-project-content > figure,
 .content.is-project-content > iframe,
 .content.is-project-content > wp-block-table {
-	margin: var(--space-wide-1d5x) 0;
+	margin: var(--space-wide-2x) 0;
 }
 
 .content.is-project-content > .wp-block-image img {
