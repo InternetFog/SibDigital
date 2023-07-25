@@ -10,15 +10,15 @@
 	color: var(--color-dark);
 }
 
-.content p,
-.content h2,
-.content h3,
-.content h4,
-.content h5,
-.content h6,
-.content li,
-.content span,
-.content cite {
+.content > p,
+.content > h2,
+.content > h3,
+.content > h4,
+.content > h5,
+.content > h6,
+.content  li,
+.content  span,
+.content  cite {
 	margin-top: 1em;
 }
 
@@ -75,6 +75,19 @@
 	font-weight: 600;
 	line-height: 140%;
 	letter-spacing: -0.14px;
+}
+
+.content a {
+	color: var(--color-blue-additional);
+	transition: var(--transition-fast);
+}
+
+.content a:hover {
+	filter: brightness(115%);
+}
+
+.content a:active {
+	filter: brightness(105%);
 }
 
 .content cite,
@@ -136,6 +149,7 @@
 	margin: var(--space-atomar-9x) 0;
 	aspect-ratio: 16/9;
 	border-radius: var(--border-radius-2x);
+	border: 1px solid var(--color-blue-additional);
 	overflow: hidden;
 }
 

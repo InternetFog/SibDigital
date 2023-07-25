@@ -53,7 +53,6 @@
 .project-card-accordion_list li.is-active span {
 	color: var(--color-red);
 	border-color: var(--color-red);
-	cursor: default;
 }
 
 .project-card-accordion_list li.is-active span::before {

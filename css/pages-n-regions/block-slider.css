@@ -43,8 +43,8 @@
 	aspect-ratio: 16/9;
 	object-fit: cover;
 	box-sizing: border-box;
-	border-radius: 24px;
-	border: var(--space-atomar-4x) solid rgba(79, 162, 240, 0.15);
+	border-radius: var(--border-radius-2x);
+	outline: var(--space-atomar-4x) solid rgba(79, 162, 240, 0.15);
 }
 
 .slider-block_slides_item .small-title:nth-child(2),
